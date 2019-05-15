@@ -1,0 +1,446 @@
+/*!
+Theme Name: WP Tour Package
+Theme URI: https://raratheme.com/wordpress-themes/tour-package/
+Author: Rara Theme
+Author URI: http://raratheme.com/
+Description: WP Tour Package is a responsive WordPress theme for tour and travel package booking. It is a good fit for all kinds of tours and travel operators. It uses WP Travel Engine WordPress plugin (https://wordpress.org/plugins/wp-travel-engine/). You can add trips, destinations, and trip types, feature travel activities, highlight your specialties and allow visitors to book the trips. The stunning design combined with modern CSS effects and animation will make your visitors feel like they are already on a trip. WP Tour Package WordPress theme is speed optimized, translation ready, SEO-friendly and mobile-friendly. Apart from travel booking companies, you can also use WP Tour Package theme for travel blogging, hotel, spa, bed and breakfast, luxury resort, reservation, tour operator, tourism, transports and car booking. Check the demo at https://demo.raratheme.com/tour-package/, documentation at https://raratheme.com/documentation/tour-package/, and get support at https://raratheme.com/support-ticket/.
+Template: travel-agency
+Version: 1.0.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: wp-tour-package
+Tags: blog, one-column, two-columns, right-sidebar, footer-widgets, custom-background, custom-header, custom-menu, custom-logo, featured-images, threaded-comments, portfolio, rtl-language-support, translation-ready, theme-options
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Tour Package is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+
+/*===================================
+ Header Four style
+===================================*/
+.header-four{
+    position: relative;
+    z-index: 2;
+}
+
+.header-four .header-t{padding: 0;}
+
+.header-four .header-t .left{float: left;}
+
+.header-four .header-t .opening-time{
+    float: left;
+    margin-right: 20px;
+    padding: 12px 20px 11px 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-four .header-t .opening-time svg{
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.header-four .header-t .email-link{
+    float: left;
+    color: #fff;
+    padding: 12px 0 11px;
+}
+
+.header-four .header-t .email-link svg{
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.header-four .header-t .right{float: right;}
+
+.header-four .social-networks li{
+    margin: 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.header-four .social-networks li:first-child{
+    border-left: 1px solid rgba(255, 255, 255, 0.1); 
+}
+
+.header-four .social-networks li a{
+    color: #fff;
+    padding: 11px 10px;
+}
+
+@media only screen and (min-width: 1025px){
+    .header-four .main-navigation{
+        float: left;
+        width: auto;
+    }
+
+    .header-four .main-navigation > div > ul > li{
+        margin: 0;
+        border-right: 1px solid #e5e5e5;
+    }
+
+    .header-four .main-navigation > div > ul > li.menu-item-has-children:after{
+        right: 15px;
+    }
+
+    .header-four .main-navigation > div > ul > li:first-child{border-left: 1px solid #e5e5e5;}
+
+    .header-four .main-navigation > div > ul > li > a{
+        padding: 10px 22px;
+    }
+
+    .header-four .main-navigation > div > ul > li > a:hover,
+    .header-four .main-navigation > div > ul > li > a:focus{
+        color: #111;
+    }
+
+    .header-four .main-navigation > div > ul > li:hover,
+    .header-four .main-navigation > div > ul > li:focus{
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .header-four .main-navigation > div > ul > li:hover:after,
+    .header-four .main-navigation > div > ul > li:focus:after{
+        color: #111;
+    }
+
+    .header-four .main-navigation > div > ul > .current-menu-item,
+    .header-four .main-navigation > div > ul > .current-menu-ancestor,
+    .header-four .main-navigation > div > ul > .current_page_item,
+    .header-four .main-navigation > div > ul > .current_page_ancestor{
+        background: rgba(0, 0, 0, 0.05);
+    }
+
+    .header-four .main-navigation > div > ul > .current-menu-item > a,
+    .header-four .main-navigation > div > ul > .current-menu-ancestor > a,
+    .header-four .main-navigation > div > ul > .current_page_item > a,
+    .header-four .main-navigation > div > ul > .current_page_ancestor > a{color: #111;}
+}
+
+.header-four .languages{
+    margin-right: 20px;
+    padding: 10px 20px 10px 0;
+    border-right: 1px solid #e5e5e5;
+}
+
+.header-four .languages ul{z-index: 1;}
+
+.header-four .languages li a{color: #666;}
+
+.header-four .tools .form-section{
+    margin: 0;
+    padding: 10px 0;
+    border: 0;
+}
+
+.header-four .tools .form-section a{
+    color: #666;
+    font-size: 18px;
+}
+
+.banner .form-holder .text .btn-banner{
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 10px 50px;
+    -webkit-transition: ease 0.2s;
+    -moz-transition: ease 0.2s;
+    transition: ease 0.2s;
+}
+
+.banner .form-holder .text .btn-banner:hover,
+.banner .form-holder .text .btn-banner:focus{
+    text-decoration: none;
+    background: #fff;
+    color: #00aeef;
+}
+
+/*=====================================
+ For Color Scheme
+=====================================*/
+a{
+    color: #00aeef; 
+}
+
+.header-four .header-t,
+.about .text-holder .title:after,
+.about .text-holder .btn-more:hover,
+.about .text-holder .btn-more:focus,
+.activities .section-header .section-title:after,
+.popular-destination .section-header .section-title:after,
+.popular-destination .grid .col .price-holder,
+.popular-destination .btn-holder .btn-more:hover,
+.popular-destination .btn-holder .btn-more:focus,
+.our-features .section-header .section-title:after,
+.featured-trip .section-header .section-title:after,
+.featured-trip .grid .img-holder .price-holder,
+.featured-trip .grid .text-holder .btn-more:hover,
+.featured-trip .grid .text-holder .btn-more:focus,
+.featured-trip .btn-holder .btn-more:hover,
+.featured-trip .btn-holder .btn-more:focus,
+.stats .section-header .section-title:after,
+.stats .grid .col .raratheme-sc-holder .hs-counter:after,
+.our-deals .section-header .section-title:after,
+.our-deals .grid .img-holder .price-holder,
+.our-deals .grid .text-holder .btn-more:hover,
+.our-deals .grid .text-holder .btn-more:focus,
+.our-deals .btn-holder .btn-more:hover,
+.our-deals .btn-holder .btn-more:focus,
+.blog-section .section-header .section-title:after,
+.blog-section .grid .post .img-holder .cat-links a,
+.blog-section .btn-holder .btn-more:hover,
+.blog-section .btn-holder .btn-more:focus,
+.widget .widget-title:after,
+.page-header .page-title:after,
+.archive .trip-content-area .grid .img-holder .price-holder,
+.archive .trip-content-area .grid .text-holder .btn-more:hover,
+.archive .trip-content-area .grid .text-holder .btn-more:focus,
+.archive .trip-content-area .grid .text-holder .wp-travel-engine-cart:hover,
+.archive .trip-content-area .grid .text-holder .wp-travel-engine-cart:focus,
+.related-post .title:after,
+.related-post .col .img-holder .cat-links a,
+.comments-area .comment-reply-title:after,
+.page-header .page-title:after,
+.pagination a:after,
+.pagination span:after,
+.single-trip .trip-post .entry-header .entry-title:after,
+#tabs-container .tab-inner-wrapper .tab-anchor-wrapper .nav-tab-active,
+.itinerary-row:before,
+#tabs-container .tab-content h1:after,
+#tabs-container .tab-content h2:after,
+#tabs-container .tab-content h3:after,
+#tabs-container .tab-content h4:after,
+#tabs-container .tab-content h5:after,
+#tabs-container .tab-content h6:after,
+.trip-content-area .widget-area .trip-price .price-holder,
+.wp-travel-engine-order-form-wrapper .trip-title, 
+.trip-search form .advanced-search-field-submit input[type="submit"]:hover, 
+.trip-search form .advanced-search-field-submit input[type="submit"]:focus{
+    background: #00aeef;
+}
+
+.site-branding .site-title a:hover,
+.site-branding .site-title a:focus,
+#activities-slider .text-holder .btn-more:hover,
+#activities-slider .text-holder .btn-more:focus,
+#activities-slider .owl-next:after,
+#activities-slider .owl-prev:after,
+#destination-slider .owl-prev:after,
+#destination-slider .owl-next:after,
+.popular-destination .grid .col .text-holder .title a:hover,
+.popular-destination .grid .col .text-holder .title a:focus,
+.popular-destination .grid .col .text-holder .meta-info svg,
+.our-features .features-holder .col .icon-holder,
+.featured-trip .grid .text-holder .title a:hover,
+.featured-trip .grid .text-holder .title a:focus,
+.featured-trip .grid .text-holder .meta-info svg,
+.our-deals .grid .text-holder .title a:hover,
+.our-deals .grid .text-holder .title a:focus,
+.our-deals .grid .text-holder .meta-info svg,
+.blog-section .grid .post .text-holder .posted-on a:hover,
+.blog-section .grid .post .text-holder .posted-on a:focus,
+.blog-section .grid .post .text-holder .entry-title a:hover,
+.blog-section .grid .post .text-holder .entry-title a:focus,
+.blog-section .grid .post .entry-footer span svg,
+.blog-section .grid .post .entry-footer a:hover,
+.blog-section .grid .post .entry-footer a:focus,
+.site-footer .footer-b a:hover,
+.site-footer .footer-b a:focus,
+#crumbs .separator,
+.archive .trip-content-area .grid .text-holder .title a:hover,
+.archive .trip-content-area .grid .text-holder .title a:focus,
+.archive .trip-content-area .grid .text-holder .meta-info svg,
+.page-template-template-activities .activities-holder .item .text-holder .btn-more:hover,
+.page-template-template-activities .activities-holder .item .text-holder .btn-more:focus,
+.page-template-template-trip_types .trip_types-holder .item .text-holder .btn-more:hover,
+.page-template-template-trip_types .trip_types-holder .item .text-holder .btn-more:focus,
+#primary .post .entry-header .entry-meta .posted-on a:hover,
+#primary .post .entry-header .entry-meta .posted-on a:focus,
+#crumbs a:hover,
+#crumbs a:focus,
+#primary .post .entry-header .entry-title a:hover,
+#primary .post .entry-header .entry-title a:focus,
+#primary .post .entry-footer .meta-info svg,
+#primary .page .entry-footer .meta-info svg,
+#primary .post .entry-footer .meta-info a:hover,
+#primary .post .entry-footer .meta-info a:focus,
+#primary .page .entry-footer .meta-info a:hover,
+#primary .page .entry-footer .meta-info a:focus,
+#primary .post .entry-footer .btn-holder .btn-more:hover,
+#primary .post .entry-footer .btn-holder .btn-more:focus,
+.post-navigation .nav-holder a:hover .post-title,
+.post-navigation .nav-holder a:focus .post-title,
+.related-post .col .text-holder .posted-on a:hover,
+.related-post .col .text-holder .posted-on a:focus,
+.related-post .col .text-holder .post-title a:hover,
+.related-post .col .text-holder .post-title a:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.widget ul li a:hover,
+.widget ul li a:focus,
+.widget_raratheme_popular_post ul li .entry-header .entry-title a:hover,
+.widget_raratheme_popular_post ul li .entry-header .entry-title a:focus,
+.widget_raratheme_recent_post ul li .entry-header .entry-title a:hover,
+.widget_raratheme_recent_post ul li .entry-header .entry-title a:focus,
+.widget_raratheme_popular_post ul li .entry-header .entry-meta a:hover,
+.widget_raratheme_popular_post ul li .entry-header .entry-meta a:focus,
+.widget_raratheme_recent_post ul li .entry-header .entry-meta a:hover,
+.widget_raratheme_recent_post ul li .entry-header .entry-meta a:focus,
+.pagination .current,
+.pagination a:hover,
+.pagination a:focus,
+.pagination .next:before,
+.pagination .prev:before,
+.single-trip #wte_enquiry_contact_form .package-name-holder .input,
+.trip-facts-value .trip-facts-text label, .trip-facts-value .trip-facts-textarea label, 
+#crumbs span.current, 
+.fixed-starting .dd-list table tbody .accordion-cost svg, 
+.dd-list table tr td svg{
+    color: #00aeef; 
+}
+
+.about .text-holder .btn-more,
+.popular-destination .btn-holder .btn-more,
+.featured-trip .grid .text-holder .btn-more,
+.featured-trip .btn-holder .btn-more,
+.our-deals .grid .text-holder .btn-more,
+.our-deals .btn-holder .btn-more,
+.blog-section .btn-holder .btn-more,
+.archive .trip-content-area .grid .text-holder .btn-more,
+.archive .trip-content-area .grid .text-holder .wp-travel-engine-cart{
+    border-color: #00aeef;
+}
+
+.popular-destination .grid .col .price-holder span:after,
+.featured-trip .grid .img-holder .price-holder span:after,
+.our-deals .grid .img-holder .price-holder span:after,
+.archive .trip-content-area .grid .img-holder .price-holder span:after{
+    border-bottom-color: #00aeef;
+}
+
+.popular-destination .grid .col .price-holder span:before,
+.featured-trip .grid .img-holder .price-holder span:before,
+.our-deals .grid .img-holder .price-holder span:before,
+.archive .trip-content-area .grid .img-holder .price-holder span:before,
+#tabs-container .tab-inner-wrapper .tab-anchor-wrapper .nav-tab-active:after{
+    border-top-color: #00aeef;
+}
+
+#activities-slider .owl-prev:hover circle,
+#activities-slider .owl-next:hover circle,
+#destination-slider .owl-prev:hover circle,
+#destination-slider .owl-next:hover circle,
+.our-features .features-holder .col:hover circle,
+.our-features .features-holder .col:focus circle{
+    stroke: #00aeef;
+}
+
+.cta .text .btn-more,
+#primary .post .entry-header .entry-meta .cat-links a:hover,
+#primary .post .entry-header .entry-meta .cat-links a:focus,
+#primary .post .entry-footer .btn-holder .btn-more,
+button, input[type="button"],
+input[type="reset"],
+input[type="submit"]{
+    background: #00aeef;
+    border-color: #00aeef; 
+}
+
+#primary .post .entry-header .entry-meta .cat-links a{
+    border-color: rgba(0, 174, 239, 0.1);
+}
+
+#primary .post .entry-content blockquote,
+#primary .page .entry-content blockquote{
+    border-left-color: #00aeef;
+}
+
+.trip-search form .advanced-search-field .custom-select:before {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300aeef' viewBox='0 0 384 512'%3E%3Cpath d='M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+.trip-search form .trip-duration strong:before {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300aeef' viewBox='0 0 448 512'%3E%3Cpath d='M436 160H12c-6.6 0-12-5.4-12-12v-36c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48v36c0 6.6-5.4 12-12 12zM12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm116 204c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12H76c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm128 128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40zm0-128c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12v-40z'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+.trip-search form .trip-cost strong:before {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300aeef' viewBox='0 0 288 512'%3E%3Cpath d='M211.9 242.1L95.6 208.9c-15.8-4.5-28.6-17.2-31.1-33.5C60.6 150 80.3 128 105 128h73.8c15.9 0 31.5 5 44.4 14.1 6.4 4.5 15 3.8 20.5-1.7l22.9-22.9c6.8-6.8 6.1-18.2-1.5-24.1C240.4 74.3 210.4 64 178.8 64H176V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48h-2.5C60.3 64 14.9 95.8 3.1 143.6c-13.9 56.2 20.2 111.2 73 126.3l116.3 33.2c15.8 4.5 28.6 17.2 31.1 33.5C227.4 362 207.7 384 183 384h-73.8c-15.9 0-31.5-5-44.4-14.1-6.4-4.5-15-3.8-20.5 1.7l-22.9 22.9c-6.8 6.8-6.1 18.2 1.5 24.1 24.6 19.1 54.6 29.4 86.3 29.4h2.8v48c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-48h2.5c49.2 0 94.6-31.8 106.4-79.6 13.9-56.2-20.2-111.2-73-126.3z'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+#activities-slider .owl-prev:after, 
+#destination-slider .owl-prev:after {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300aeef' viewBox='0 0 192 512'%3E%3Cpath d='M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+#activities-slider .owl-next:after, 
+#destination-slider .owl-next:after {
+    background: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300aeef' viewBox='0 0 192 512'%3E%3Cpath d='M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z'/%3E%3C/svg%3E") center center no-repeat;
+}
+
+@media only screen and (max-width: 1024px){
+    .header-four .tools{
+        margin: 5px 15px 0 0;
+    }
+
+    .header-four .tools .form-section a{color: #fff;}
+
+    .header-four .tools .form-section{padding: 0;}
+
+    .header-four .tools .form-section .form-holder{
+        top: 40px;
+    }
+
+    .nav-holder .container,
+    #site-navigation{
+        background: #00aeef;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header-four .header-t .left,
+    .header-four .header-t .right{
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-four .header-t .opening-time{
+        float: none;
+        display: inline-block;
+        padding-right: 0;
+        border-right: 0;
+        margin: 0 10px;
+    }
+
+    .header-four .header-t .email-link{
+        float: none;
+        display: inline-block;
+        margin: 0 10px;
+    }
+
+    .header-four .social-networks{
+        width: 100%;
+    }
+
+    .header-four .social-networks li{
+        float: none;
+        display: inline-block;
+        border: 0;
+    }
+
+    .header-four .social-networks li:first-child{border-left: 0;}
+
+    .header-four .tools .form-section .form-holder{
+        right: auto;
+        left: -92px;
+    }
+
+    .header-four .tools .form-section .form-holder:before,
+    .header-four .tools .form-section .form-holder:after{
+        right: auto;
+        left: 100px;
+    }
+}

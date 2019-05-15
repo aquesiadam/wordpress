@@ -1,0 +1,6 @@
+<a class="epay_inline"
+    data-payment_page="http://localhost/Systemadmin/wordpress/donations/22/"
+    data-pay_button_text="Pay Now">
+</a>
+
+<script src="https://epaygh.com/js/<inline.js"></script>
